@@ -1,7 +1,8 @@
 .layoutContainer {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	/* Usar 100dvh para evitar el pequeño scroll en móviles */
+	height: 100dvh;
 	/* Ocupa toda la altura de la pantalla */
 	overflow: hidden;
 	/* Evita el scroll vertical */
