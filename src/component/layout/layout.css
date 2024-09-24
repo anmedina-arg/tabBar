@@ -1,0 +1,36 @@
+.layoutContainer {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	/* Ocupa toda la altura de la pantalla */
+	overflow: hidden;
+	/* Evita el scroll vertical */
+}
+
+.navBar {
+	flex-shrink: 0;
+	/* Mantiene la altura fija del header */
+	height: 60px;
+	/* Altura fija para el header */
+	background-color: #333;
+	/* Para visualización */
+}
+
+.mainContent {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+	/* Permite el scroll horizontal */
+	scroll-snap-type: x mandatory;
+	/* Opcional: para un scroll que se ajusta a las secciones */
+}
+
+.tabBar {
+	flex-shrink: 0;
+	/* Mantiene la altura fija del footer */
+	height: 60px;
+	/* Altura fija para el footer */
+	background-color: #333;
+	/* Para visualización */
+}

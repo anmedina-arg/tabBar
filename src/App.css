@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  /* Asegura que el body ocupe el 100% del viewport */
+}
+
+.mainContainer {
+  display: flex;
+  width: 100vw;
+  /* Contenedor ocupa el ancho total del viewport */
+  overflow-x: auto;
+  /* Habilita el desplazamiento horizontal */
+  scroll-snap-type: x mandatory;
+  /* Scroll a secciones de manera fluida */
+}
+
+section {
+  height: 100vh;
+  /* Ocupa el 100% del alto del viewport */
+  width: 100vw;
+  /* Ocupa el 100% del ancho del viewport */
+  flex-shrink: 0;
+  /* Evita que las secciones se reduzcan */
+  scroll-snap-align: start;
+  /* Se asegura que el scroll encaje en cada sección */
+  background-color: orange;
+}
+
+section:nth-of-type(2) {
+  background-color: green;
+}
+
+section:nth-of-type(3) {
+  background-color: yellow;
+}
+
+section:nth-of-type(4) {
+  background-color: violet;
+}
+
+section:nth-of-type(5) {
+  background-color: blue;
+}
