@@ -1,0 +1,11 @@
+.tabContainer {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tabIcon {
+	height: 24px;
+	width: 24px;
+}

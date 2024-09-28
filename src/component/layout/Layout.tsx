@@ -1,11 +1,9 @@
-import React from 'react';
+import './layout.css';
+import { LayoutProps } from '../../types/types';
+
 import NavBar from '../navBar/NavBar'; // Importa directamente los componentes que quieres incluir
 import TabBar from '../tabBar/TabBar';
-import './layout.css';
-
-interface LayoutProps {
-	children: React.ReactNode; // Solo necesita aceptar los hijos dinámicos (contenido)
-}
+import { tabBarItems } from "../../mockData/tabBarItems";
 
 function Layout({ children }: LayoutProps): JSX.Element {
 	return (
@@ -15,7 +13,7 @@ function Layout({ children }: LayoutProps): JSX.Element {
 			</header>
 			<main className="mainContent">{children}</main>
 			<footer className="tabBar">
-				<TabBar />
+				<TabBar items={tabBarItems} />
 			</footer>
 		</div>
 	);

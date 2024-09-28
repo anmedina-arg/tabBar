@@ -12,12 +12,12 @@ body {
 
 .mainContainer {
   display: flex;
-  width: 100vw;
   /* Contenedor ocupa el ancho total del viewport */
-  overflow-x: auto;
+  width: 100vw;
   /* Habilita el desplazamiento horizontal */
-  scroll-snap-type: x mandatory;
+  overflow-x: auto;
   /* Scroll a secciones de manera fluida */
+  scroll-snap-type: x mandatory;
 }
 
 section {

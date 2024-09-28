@@ -1,7 +1,7 @@
 import './App.css';
 import Layout from './component/layout/Layout';
 
-function App() {
+function App(): JSX.Element {
 
   return (
     <Layout>
@@ -16,4 +16,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

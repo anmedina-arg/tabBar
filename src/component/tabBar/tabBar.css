@@ -1,0 +1,8 @@
+.tabBarContainer {
+	border: 1px solid red
+}
+
+.tabBarListItems {
+	display: flex;
+	justify-content: space-between;
+}
