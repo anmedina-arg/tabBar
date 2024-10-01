@@ -6,7 +6,7 @@ function Tab({ item }: TabProps): JSX.Element {
 	return (
 		<a className='tabContainer' href={href}>
 			<span className='tabIcon'>{icon}</span>
-			<span>{name}</span>
+			<span className='tabName'>{name}</span>
 		</a>
 	)
 };

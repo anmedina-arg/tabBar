@@ -1,0 +1,35 @@
+/* 
+Con tipografía fluida, los textos ya se adaptan de manera inteligente al tamaño de la pantalla gracias a la función clamp().
+Esto elimina la necesidad de establecer tamaños de fuente específicos dentro de los breakpoints, lo que te permite enfocarte en cómo se distribuyen los elementos del layout (márgenes, espaciados, etc.).
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--font-size-sm: clamp(0.66rem, 0.19vi + 0.62rem, 0.77rem);
+	--font-size-base: clamp(0.88rem, 0.63vi + 0.75rem, 1.25rem);
+	--font-size-md: clamp(1.17rem, 1.43vi + 0.88rem, 2.02rem);
+	--font-size-lg: clamp(1.55rem, 2.86vi + 0.98rem, 3.27rem);
+	--font-size-xl: clamp(2.07rem, 5.37vi + 1rem, 5.29rem);
+}
+
+body {
+	font-size: var(--font-size-base);
+	font-family: "Raleway", sans-serif
+}
+
+h1 {
+	font-size: var(--font-size-xl);
+}
+
+h2 {
+	font-size: var(--font-size-lg);
+}
+
+h3 {
+	font-size: var(--font-size-md);
+}
+
+p {
+	font-size: var(--font-size-sm);
+}

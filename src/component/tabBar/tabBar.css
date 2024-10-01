@@ -1,5 +1,6 @@
 .tabBarContainer {
-	border: 1px solid red
+	border: 1px solid red;
+	padding-inline: 7px;
 }
 
 .tabBarListItems {
